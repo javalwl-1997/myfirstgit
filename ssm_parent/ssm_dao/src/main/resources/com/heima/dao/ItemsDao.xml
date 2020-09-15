@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace: 名称空间，接口的全限定名-->
+<mapper namespace="com.heima.dao.ItemsDao">
+    <!--添加操作-->
+    <insert id="save" parameterType="com.heima.bean.Items">
+        INSERT  INTO items(name,price,pic,createtime,detail)
+        VALUES(#{name},#{price},#{pic},#{createtime},#{detail})
+
+    </insert>
+    <!--查询操作-->
+    <select id="findAll" resultType="com.heima.bean.Items">
+        select *from items
+
+    </select>
+
+</mapper>
+
