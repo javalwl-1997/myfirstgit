@@ -61,7 +61,7 @@
                 <version>${spring.version}</version>
             </dependency>
 
-            <!--用于SpringMVC-->
+
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-webmvc</artifactId>
